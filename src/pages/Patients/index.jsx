@@ -4,8 +4,7 @@ import PatientsList from '../../components/PatientsList';
 
 const Patients = () => {
   return (
-    <div>
-      <Header/>
+    <div className='inherit'>
       <PatientsList/>
     </div>
   );
