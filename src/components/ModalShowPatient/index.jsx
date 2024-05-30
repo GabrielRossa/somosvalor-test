@@ -12,10 +12,10 @@ const ModalShowPatient = ({ isOpen, closeModal, selectedPatient }) => {
             <div className='flex mb-6 justify-between'>
               <h2 className='text-3xl font-bold'>{selectedPatient.nome}</h2>
               <div className='flex justify-end'>
-                <button type="button" className='hover:shadow-xl duration-200'>
-                  <img src={trash} alt="Excluir paciente" />
+                <button type="button" className=' duration-200 hover:scale-110'>
+                  <img src={trash} alt="Excluir paciente" className='hover:shadow-xl'/>
                 </button>
-                <button type='button'>
+                <button type='button' className='hover:scale-110 duration-200'>
                   <img src={edit} alt="Editar paciente" className='ml-4 hover:shadow-xl duration-200' />
                 </button>
               </div>

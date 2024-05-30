@@ -71,22 +71,22 @@ const ModalNewPatient = ({ isOpen, closeModal }) => {
             <form onSubmit={handleSubmit}>
               <div className='mb-4'>
                 <label className='block text-sm font-bold mb-2'>Nome</label>
-                <input className='w-full px-3 py-2 border rounded' type="text" placeholder="Nome" value={nome} onChange={(e) => handleChange(e, setNome)} />
+                <input className='w-full px-3 py-2 border rounded border-gray-400 rounded' type="text" placeholder="Digite o nome do paciente..." value={nome} onChange={(e) => handleChange(e, setNome)} />
                 {errors.nome && <p className='text-red-500 text-xs italic'>{errors.nome}</p>}
               </div>
               <div className='mb-4'>
                 <label className='block text-sm font-bold mb-2'>Idade</label>
-                <input className='w-full px-3 py-2 border rounded' type="number" placeholder="Idade" value={idade} onChange={(e) => handleChange(e, setIdade)} />
+                <input className='w-full px-3 py-2 border rounded border-gray-400 rounded' type="number" placeholder="Digite a idade do paciente..." value={idade} onChange={(e) => handleChange(e, setIdade)} />
                 {errors.idade && <p className='text-red-500 text-xs italic'>{errors.idade}</p>}
               </div>
               <div className='mb-4'>
                 <label className='block text-sm font-bold mb-2'>Última Consulta</label>
-                <input className='w-full px-3 py-2 border rounded' type="date" value={ultimaConsulta} onChange={(e) => handleChange(e, setUltimaConsulta)} />
+                <input className='w-full px-3 py-2 border rounded border-gray-400 rounded' type="date" value={ultimaConsulta} onChange={(e) => handleChange(e, setUltimaConsulta)} />
                 {errors.ultimaConsulta && <p className='text-red-500 text-xs italic'>{errors.ultimaConsulta}</p>}
               </div>
               <div className='mb-4'>
                 <label className='block text-sm font-bold mb-2'>Histórico Médico</label>
-                <textarea className='w-full px-3 py-2 border rounded' placeholder="Histórico Médico" value={historicoMedico} onChange={(e) => handleChange(e, setHistoricoMedico)}></textarea>
+                <textarea className='w-full px-3 py-2 border border-gray-400 rounded' placeholder="Informe o Histórico Médico..." value={historicoMedico} onChange={(e) => handleChange(e, setHistoricoMedico)}></textarea>
                 {errors.historicoMedico && <p className='text-red-500 text-xs italic'>{errors.historicoMedico}</p>}
               </div>
               <div className='flex justify-end'>
